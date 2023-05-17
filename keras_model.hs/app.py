@@ -51,7 +51,7 @@ scaler = MinMaxScaler(feature_range=(0,1))
 data_training_array = scaler.fit_transform(data_training)
 
 #load my model 
-model = load_model(r'C:\Users\Monin\OneDrive\Desktop\future bull\keras_model.hs')
+model = load_model(r'../keras_model.hs')
 
 #testing
 past_100_days = data_training.tail(100)
